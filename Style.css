@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background: radial-gradient(
+    circle,
+    rgba(228, 157, 106, 0.8),
+    rgba(106, 157, 228, 0.8)
+  );
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(87, 8, 247, 0.9);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(122, 82, 13, 0.559);
+  margin-top: 1%;
+}
+
+#app-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.drumMaster {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pic {
+  border: 2px solid grey;
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(122, 82, 13, 0.559);
+}
+
+.Music-drum {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(122, 82, 13, 0.559);
+  cursor: pointer;
+}
+
+.Music-drum:hover {
+  background-color: rgb(213, 215, 231);
+}
+
+.Music-drum:hover::before {
+  content: "🎶";
+  font-size: 1rem;
+}
+
+.text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
