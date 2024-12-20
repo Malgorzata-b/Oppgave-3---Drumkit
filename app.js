@@ -19,7 +19,7 @@ for (let key in drumMap) {
   drum.classList.add("drumMaster");
   // Make drum image
   const image = document.createElement("img");
-  image.src = `/Images/${key}.png`;
+  image.src = `./Images/${key}.png`;
   image.classList.add("pic");
   image.style.height = "6rem";
   image.style.width = "6rem";
